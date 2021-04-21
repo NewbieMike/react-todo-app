@@ -2,9 +2,10 @@ import React from 'react';
 import styles from './Card.scss';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
-const Card = props => (
+
+const Card = ({title}) => (
   <div className={styles.component}>
-    <p className={props.title}>{ReactHtmlParser(props.title)}</p>
+    <p className={title}>{ReactHtmlParser(title)}</p>
   </div>
 );
 Card.propTypes = {

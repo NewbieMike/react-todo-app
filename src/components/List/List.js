@@ -35,6 +35,7 @@ class List extends React.Component {
         ));
       }
       render() {
+        console.log(columns);
         const {title, image, description, columns} = this.props;
         return (
           <section className={styles.component}>
