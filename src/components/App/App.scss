@@ -22,3 +22,7 @@
 .title + .subtitle {
   margin-top: (- $base-size * 3);
 }
+.listBtn {
+  padding: 15px 50px;
+  border: 1px solid $color-information;
+}

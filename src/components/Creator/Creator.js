@@ -41,7 +41,6 @@ class Creator extends React.Component {
       visibleButtons: false,
     });
   }
-
   render() {
     return (
       <div className={styles.component}>

@@ -6,6 +6,9 @@ import Column from '../Column/ColumnContainer';
 import Creator from '../Creator/Creator';
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
+import Button from '../Button/Button';
+
+
 class List extends React.Component {
     state = {
       columns: this.props.columns || [],
@@ -43,15 +46,17 @@ class List extends React.Component {
             <div className={styles.description}>
               {ReactHtmlParser(description)}
             </div>
-            <div className={styles.creator}>
-              <Creator text={settings.columnCreatorText} action={addColumn}/>
+            <Button id='listButton'>Show lists</Button>
+            <div>
+              <div className={styles.creator}>
+                <Creator text={settings.columnCreatorText} action={addColumn}/>
+              </div>
+              <div className={styles.columns}>
+                {columns.map(columnData => (
+                  <Column key={columnData.id} {...columnData} />
+                ))}
+              </div>
             </div>
-            <div className={styles.columns}>
-              {columns.map(columnData => (
-                <Column key={columnData.id} {...columnData} />
-              ))}
-            </div>
-            
           </section>
         );
       }
