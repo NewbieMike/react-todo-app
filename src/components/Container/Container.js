@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Container.scss';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 // eslint-disable-next-line react/prop-types
 const Container = ({children}) =>{
@@ -9,7 +9,7 @@ const Container = ({children}) =>{
   );
 };
 
-Container.PropTypes = {
-  children: PropTypes.node,
+Container.propTypes = {
+  children: propTypes.node,
 };
 export default Container;
