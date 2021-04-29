@@ -7,4 +7,12 @@
   padding: $base-size;
   margin: 0 0 $base-size 0;
   border-radius: $radius;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  i {
+    cursor: pointer;
+    font-size: 22px;
+  }
 }

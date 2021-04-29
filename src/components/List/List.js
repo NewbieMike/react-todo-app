@@ -6,7 +6,6 @@ import Column from '../Column/ColumnContainer';
 import Creator from '../Creator/Creator';
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
-import Button from '../Button/Button';
 import Container from '../Container/Container';
 
 
@@ -48,7 +47,6 @@ class List extends React.Component {
               <div className={styles.description}>
                 {ReactHtmlParser(description)}
               </div>
-              <Button id='listButton'>Show lists</Button>
               <div>
                 <div className={styles.creator}>
                   <Creator text={settings.columnCreatorText} action={addColumn}/>

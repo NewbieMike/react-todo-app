@@ -2,7 +2,6 @@ import React from 'react';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero';
 import { listData, infoContents } from '../../data/dataStore';
-
 const {info, image} = listData;
 const {title, text} = infoContents;
 const Info = () => (

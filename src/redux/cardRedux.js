@@ -1,8 +1,9 @@
 import shortid from 'shortid';
 
 // selectors
-export const getCardsForColumn = ({cards, searchString}, columnId) => cards.filter(card => card.columnId == columnId && new RegExp(searchString, 'i').test(card.title));
+export const getCardsForColumn = ({cards},columnId) => cards.filter(card => card.columnId == columnId);
 
+export const getSearchedCardsForLists = ({cards}, searchString) => cards.filter(card => new RegExp(searchString, 'i').test(card.title));
 // action name creator
 const reducerName = 'cards'; // jedna z nazwwłaściwości, które znajdują się w zakładce Redux -> State -> Tree (app, columns,lists,cards)
 const createActionName = name => `app/${reducerName}/${name}`;

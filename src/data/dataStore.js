@@ -27,6 +27,7 @@ export const infoContents ={
 };
 export const faqContents = {
   title: 'FAQ',
+  faq: 'FAQ section!',
   question: 'Question',
   answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
   imageFaq: 'https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -34,7 +35,6 @@ export const faqContents = {
 export const listData = {
   title: 'Things to do <sup>soon!</sup>',
   info: 'Informations about App!',
-  faq: 'FAQ section!',
   description: 'Interesting things I want to check out!',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   columns: [
@@ -85,13 +85,27 @@ export const listData = {
     },
   ],
 };
-
+export const searchData = {
+  title: 'Searching results',
+};
 const lists = [
   {
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-2',
+    title: 'Places to visit <sup>soon!</sup>',
+    description: 'Interesting places I want to check out!',
+    image: 'https://images.pexels.com/photos/1144687/pexels-photo-1144687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  },
+  {
+    id: 'list-3',
+    title: 'Dishes to eat <sup>soon!</sup>',
+    description: 'Interesting dishes I want to check out!',
+    image: 'https://images.pexels.com/photos/6607418/pexels-photo-6607418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   },
 ];
 
